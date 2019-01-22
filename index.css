@@ -1,0 +1,632 @@
+body{
+  margin: 0;
+  padding: 0 0 0 0 ;
+}
+section {
+  display: block;
+}
+
+#loading{
+  width: 100%;
+  height: 100%;
+  top:0px;
+  left: 0px;
+  position: fixed;
+  display:block;
+  opacity:1;
+  background-color:#fff;
+  z-index:105;
+  text-align:center;
+}
+#loading-image{
+  position:absolute;
+  top:50%;
+  left:50%;
+  z-index:106;
+}
+
+
+
+#header{
+  position:fixed;
+  top:0;
+  width: 100%;
+  padding: 5px;
+  z-index:99;
+  height: 50px;
+
+  /* background: #CDF2E7; */
+}
+#nav{
+  margin: 0px;
+  padding: 3px 0;
+
+}
+#nav ul {
+  float: right;
+  margin-right: 20px;
+}
+#nav li {
+  display: inline;
+  /* margin:10px; */
+
+  /* font-size: em; */
+  /* margin-right: 40px; */
+}
+#nav li a {
+  display:inline-block;
+  text-decoration: none;
+  color: #727272;
+  position: relative;
+  font-size:16px;
+  font-family: 'Coda';
+  padding: 5px 10px 0 5px;
+
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+
+}
+/*
+#index :before{
+  content: '';
+  width: 20px;
+  position:absolute;
+  border-bottom:1px  solid black;
+  bottom:0px;
+  right:100px;
+  transition: 0.7s;
+} */
+#nav li a:hover{
+  transform:translate(-5px, 5px);
+  -webkit-transform:translate(-5px, 5px);
+  -moz-transform:translate(-5px, 5px);
+  /* font-weight:  bold; */
+  color: #bdd8a7;
+}
+
+/* #nav li#current{
+  font-family: 'clear_sans_mediumregular', sans-serif;
+  font-size:16px;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  padding-bottom: 2px;
+
+} */
+
+
+
+/* end of header */
+#main {
+  overflow: hidden; /* 차이 모르겠는데?*/
+}
+#section1{
+  /* position:relative; */
+  width: 100%
+  height: 320px;
+  background-color:#ffffff ;
+   /* #CDF2E6;#D3E1BE */
+  overflow: hidden /*흠..*/
+  padding: 0;
+  /* margin : 0 auto; */
+  margin-bottom: 70px;
+}
+
+
+#name {
+  padding: 90px 0px;
+  text-align:center;
+  /* display: inline-block; */
+}
+
+#name img{
+  animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  /* text-align:center;  */
+}
+@keyframes fadein{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@-moz-keyframes fadein{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+#english{
+  font-family: 'Coda';
+  font-size: 48px;
+  text-align:center;
+  margin:0;
+}
+#korean{
+  font-family: 'Noto Serif KR';
+  font-size: 30px;
+  text-align:center;
+  margin:0;
+}
+
+
+/* .pathCenter{
+  text-align: center;
+}
+.pathCenter p {
+  color: #84a39a;
+  font-size: 0.8em;
+  padding-top:270px;
+} */
+
+/* #grid {
+  text-align: center;
+} */
+
+/* #portfolioGrid figure{
+  display: inline-block;
+  margin-right: 40px;
+  margin-left:0;
+  padding:0;
+  margin-bottom: 30px;
+} */
+#section2{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+margin-top:0;
+margin-bottom: 50px;
+}
+/*
+
+프로젝트모달
+
+*/
+#myModal1, #myModal2, #myModal3, #myModal4{
+  /* 모달창 띄웠을 때 바탕  */
+  display:none;
+  position:fixed;
+  z-index:101;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+#modal_title1, #modal_title2, #modal_title3, #modal_title4{
+  /*프로젝트 이미지 위에 타이틀, 폰트 지정 여기서 해야하는지?
+  클래스로 묶어버렸는데????????*/
+  cursor: pointer;
+  border:none;
+  background:none;
+  color: white;
+  font-size:30px;
+  font-family: 'Roboto';
+  opacity:0.8;
+  /* z-index:999;  */
+}
+.title p{
+  opacity:0.8;
+}
+button:focus{
+  outline:none !important;
+}
+
+.modal-content{
+  background-color:#fefefe;
+  margin:5% auto;
+  padding: 20px;
+  border:1px solid #727272;
+  width:90%;
+  z-index:99;
+
+}
+.subject{
+  color:#323232;
+  font-family:'Sans-serif','Roboto';
+  font-size:24px;
+  /* text-align:center;  */
+  width: calc(100% - 20px);
+  background-color: #F5f5f5;
+  /* letter-spacing: 4px; */
+  font-weight: normal;
+  /* z-index:102;
+  position:fixed; */
+  padding:20px 0 20px 20px;
+  margin:50px 0 30px 0;
+  left: 5%;
+  /* opacity:1; */
+  top:30px;
+}
+.close{
+  top:30px;
+  color: #323232;
+  float:right;
+  z-index: 102;
+  /* position:fixed; */
+  padding-left:5px;
+  padding-right:5px;
+  cursor:pointer;
+  right: 5%;
+  /* font-weight: bold; */
+  /* 흠 이 여백들 왜? */
+  font-size: 30px;
+  margin: 10px;
+  height: 30px;
+}
+/* .close:hover, .close:focus{
+  color:black;
+  text-decoration:none;
+
+} */
+.main_container{
+  /* position: absolute; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin: 0; */
+  text-align:center;
+  /* margin: 0 50px 0 50px; */
+  width: 100%;
+
+  /* float:left; */
+}
+
+
+.img-wrapper{
+  /* float:left; */
+  position:relative;
+  text-align: center;
+  overflow:hidden;
+}
+
+.img-wrapper {
+  margin:8px;
+  width:350px;
+  height:350px;
+  /* position:absolute; */
+}
+.img-wrapper img{
+  position: absolute;
+  top:0;
+  left:0;
+  width:350px;
+  height:350px;
+  text-align:center;
+  /* box-sizing: border-box; */
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  /* transition: height 0.3s ease-in-out; */
+
+}
+.line{
+  position: absolute;
+  top:25px;
+  left:25px;
+  width:300px;
+  height: 300px;
+  border: 1px solid white;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  opacity:0;
+  text-align: center;
+}
+
+
+.darkness{
+  position:absolute;
+  top:0;
+  left:0;
+  width:inherit;
+  height:inherit;
+  background:black;
+  opacity:0;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+}
+.title{
+  position:absolute;
+  color:white;
+  top:80px;
+  width:300px;
+  /* left:10px; */
+  z-index:99;
+  /* text-align:center; */
+  font-family:'Roboto';
+  opacity:0;
+
+}
+
+.title p{
+  color: white;
+  font-size: 20px;
+  z-index:99;
+  font-family: 'Roboto';
+}
+
+.img-wrapper:hover .darkness{
+  opacity:0.7;
+}
+.img-wrapper:hover .title{
+  opacity:0.9;
+}
+.img-wrapper:hover .line{
+  opacity: 0.9;
+}
+.img-wrapper:hover img{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+
+/*
+
+
+ CSS for Dream Academy Document
+
+
+ */
+.pro_container {
+  width: 70.8%;
+  max-width : 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  clear: both;
+}
+
+.content_wrapper {
+  /* width: 70.8%; */
+  max-width : 1120px;
+  margin: 0 auto ;
+  margin-bottom: 50px;
+  clear: both;
+}
+.content_wrapper ul li{
+  list-style: square outside none;
+}
+
+p span{
+  color: black;
+  font-family: 'Roboto';
+}
+
+.content_total{
+  width: 70.8%;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
+  text-align:center;
+}
+
+.pro_box {
+  border-left: 1px solid #727272;;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+.pro_H3 {
+  font-family: 'clear_sans_lightregular', sans-serif;
+  color: #323232;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-family: 'clear_sans_lightregular', sans-serif;
+  color: #727272;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+
+div .design_process img {
+  width: 700px;
+  /* height: 280px; */
+  margin: 30px auto;
+  display: block;
+
+}
+
+.video {
+
+  display: block;
+  margin: 0 auto;
+}
+
+.modal_project{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+  /* position:fixed;  */
+}
+
+/* CSS for data viz content */
+
+.data_process{
+  display: inline-block;
+
+}
+div .data_process img{
+  width: 600px;
+  height: 450px;
+  margin: 10px;
+}
+
+
+/* --------------CSS for About-----------  */
+#section3{
+  margin: 80px auto;
+  text-align:center;
+}
+
+
+#section3 .main_container
+{
+  /* margin: 50 auto; */
+  padding:10px;
+  /* margin-left: 20px;
+  margin-bottom: 80px; */
+  /* display:flex;
+  flex-wrap: wrap; */
+  display: inline-block;
+  width: 90%;
+  line-height: 1.5em;
+}
+
+.myName{
+  font-family: 'clear_sans_lightregular', sans-serif;
+  color: #242424;
+  font-size: 1.1em;
+  /* text-transform: uppercase; */
+  margin: 0 0 10px 0;
+}
+
+.me_wrap{
+  padding: 50px;
+  width: 70%;
+  background-color: #F5f5f5;
+  margin: 20px;
+  display: inline-block;
+}
+
+.me_describ{
+  list-style: none;
+  padding: 5px;
+}
+
+.me_describ  li  span{
+  display: inline-block;
+  width: 130px;
+  letter-spacing: 2px;
+  color: #242424;
+  font-size: 14px;
+}
+
+/* #thirdSection .main_container img{
+  -webkit-transform: rotate(90deg);
+  display: inline-block;
+} */
+
+
+
+
+
+
+  /* responsive */
+
+/* @media screen and ( min-width:700px ){
+
+  .contentLeft{
+    width: 50%;
+  }
+  .contentRight{
+    width: 30%;
+  }
+} */
+
+
+#footer{
+  background-color: #D3E1BE;
+  margin : 0;
+  /* z-index: 99; */
+  position: relative;
+  bottom:0;
+  width: 100%;
+  clear: both;
+}
+
+.copyright {
+  /* font-family: 'clear_sans_lightregular', sans-serif; */
+  color: #242424;
+  font-size: 0.9em;
+  font-family: 'Coda';
+  padding: 0;
+  line-height: 40px;
+  text-align : center;
+  /* height: 40px; */
+  width: 30%;
+  margin:5px;
+  display: inline-block;
+}
+.email{
+  /* font-family: 'clear_sans_lightregular', sans-serif; */
+  color: #242424;
+  font-size: 0.9em;
+  font-family: 'Coda';
+  line-height: 40px;
+  /* height: 40px; */
+  text-align: center;
+  width: 33%;
+  margin:5px;
+  display: inline-block;
+}
+/* .social{
+  display:inline-block;
+  /* width: 30%;
+  height: 40px; */
+/* } */
+/* .social li{ */
+  /* float: left; */
+  /* width:100px; */
+  /* font-family: 'clear_sans_lightregular', sans-serif; */
+  /* font-size: 0.8em; */
+  /* display: inline-block;
+  text-align: right; */
+/* } */
+
+.social ul{
+   list-style: none;
+   padding: 0;
+   text-align: center;
+   height: 40px;
+   position: relative;
+   margin: 0 auto;
+
+}
+
+.social li{
+  display: inline-block;
+  margin: 5px;
+  position:relative;
+}
+.social{
+  display: inline-block;
+  margin:5px;
+  width: 30%;
+  padding:0;
+  /* line-height: 60px;  */
+
+}
+.head_container{
+  clear: both;
+  padding: 10px 0 10px 0;
+}
+
+.foot_container{
+  clear: both;
+  padding: 10px 0 10px 0;
+}

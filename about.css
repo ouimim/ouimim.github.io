@@ -1,0 +1,45 @@
+section {
+  width: 88%;
+  margin: 0 auto;
+
+}
+#secondSection .container
+{
+  padding:10px;
+  margin-left: 20px;
+  margin-bottom: 80px;
+  display:flex;
+  flex-wrap: wrap;
+
+  line-height: 1.5em;
+}
+
+.contentH3{
+  font-family: 'clear_sans_lightregular', sans-serif;
+  color: #242424;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.content_wrap{
+  width: 40%;
+  margin: 20px;
+}
+
+.describ{
+  list-style: none;
+  padding: 5px;
+}
+
+.describ  li  span{
+  display: inline-block;
+  width: 130px;
+  letter-spacing: 2px;
+  color: #242424;
+  font-size: 14px;
+}
+
+img{
+  -webkit-transform: rotate(90deg);
+}
