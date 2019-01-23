@@ -24,9 +24,6 @@ section {
   left:50%;
   z-index:106;
 }
-
-
-
 #header{
   position:fixed;
   top:0;
@@ -34,13 +31,11 @@ section {
   padding: 5px;
   z-index:99;
   height: 50px;
-
-  /* background: #CDF2E7; */
 }
+
 #nav{
   margin: 0px;
   padding: 3px 0;
-
 }
 #nav ul {
   float: right;
@@ -48,10 +43,6 @@ section {
 }
 #nav li {
   display: inline;
-  /* margin:10px; */
-
-  /* font-size: em; */
-  /* margin-right: 40px; */
 }
 #nav li a {
   display:inline-block;
@@ -67,16 +58,7 @@ section {
   -moz-transition: all 0.3s;
 
 }
-/*
-#index :before{
-  content: '';
-  width: 20px;
-  position:absolute;
-  border-bottom:1px  solid black;
-  bottom:0px;
-  right:100px;
-  transition: 0.7s;
-} */
+
 #nav li a:hover{
   transform:translate(-5px, 5px);
   -webkit-transform:translate(-5px, 5px);
@@ -84,17 +66,6 @@ section {
   /* font-weight:  bold; */
   color: #bdd8a7;
 }
-
-/* #nav li#current{
-  font-family: 'clear_sans_mediumregular', sans-serif;
-  font-size:16px;
-  border-style: solid;
-  border-width: 0px 0px 2px 0px;
-  padding-bottom: 2px;
-
-} */
-
-
 
 /* end of header */
 #main {
@@ -162,27 +133,6 @@ section {
   margin:0;
 }
 
-
-/* .pathCenter{
-  text-align: center;
-}
-.pathCenter p {
-  color: #84a39a;
-  font-size: 0.8em;
-  padding-top:270px;
-} */
-
-/* #grid {
-  text-align: center;
-} */
-
-/* #portfolioGrid figure{
-  display: inline-block;
-  margin-right: 40px;
-  margin-left:0;
-  padding:0;
-  margin-bottom: 30px;
-} */
 #section2{
 width: 80%;
 margin-left: auto;
@@ -209,8 +159,6 @@ margin-bottom: 50px;
   background-color: rgba(0,0,0,0.4);
 }
 #modal_title1, #modal_title2, #modal_title3, #modal_title4{
-  /*프로젝트 이미지 위에 타이틀, 폰트 지정 여기서 해야하는지?
-  클래스로 묶어버렸는데????????*/
   cursor: pointer;
   border:none;
   background:none;
@@ -218,7 +166,6 @@ margin-bottom: 50px;
   font-size:30px;
   font-family: 'Roboto';
   opacity:0.8;
-  /* z-index:999;  */
 }
 .title p{
   opacity:0.8;
@@ -240,17 +187,12 @@ button:focus{
   color:#323232;
   font-family:'Sans-serif','Roboto';
   font-size:24px;
-  /* text-align:center;  */
   width: calc(100% - 20px);
   background-color: #F5f5f5;
-  /* letter-spacing: 4px; */
   font-weight: normal;
-  /* z-index:102;
-  position:fixed; */
   padding:20px 0 20px 20px;
   margin:50px 0 30px 0;
   left: 5%;
-  /* opacity:1; */
   top:30px;
 }
 .close{
@@ -258,38 +200,21 @@ button:focus{
   color: #323232;
   float:right;
   z-index: 102;
-  /* position:fixed; */
   padding-left:5px;
   padding-right:5px;
   cursor:pointer;
   right: 5%;
-  /* font-weight: bold; */
-  /* 흠 이 여백들 왜? */
   font-size: 30px;
   margin: 10px;
   height: 30px;
 }
-/* .close:hover, .close:focus{
-  color:black;
-  text-decoration:none;
 
-} */
 .main_container{
-  /* position: absolute; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* margin: 0; */
   text-align:center;
-  /* margin: 0 50px 0 50px; */
   width: 100%;
-
-  /* float:left; */
 }
 
-
 .img-wrapper{
-  /* float:left; */
   position:relative;
   text-align: center;
   overflow:hidden;
@@ -299,7 +224,6 @@ button:focus{
   margin:8px;
   width:350px;
   height:350px;
-  /* position:absolute; */
 }
 .img-wrapper img{
   position: absolute;
@@ -308,12 +232,9 @@ button:focus{
   width:350px;
   height:350px;
   text-align:center;
-  /* box-sizing: border-box; */
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  /* transition: height 0.3s ease-in-out; */
-
 }
 .line{
   position: absolute;
@@ -328,7 +249,6 @@ button:focus{
   opacity:0;
   text-align: center;
 }
-
 
 .darkness{
   position:absolute;
@@ -347,12 +267,9 @@ button:focus{
   color:white;
   top:80px;
   width:300px;
-  /* left:10px; */
   z-index:99;
-  /* text-align:center; */
   font-family:'Roboto';
   opacity:0;
-
 }
 
 .title p{
@@ -377,12 +294,9 @@ button:focus{
   -moz-transform: scale(1.1);
 }
 
-
 /*
 
-
  CSS for Dream Academy Document
-
 
  */
 .pro_container {
@@ -396,7 +310,6 @@ button:focus{
 }
 
 .content_wrapper {
-  /* width: 70.8%; */
   max-width : 1120px;
   margin: 0 auto ;
   margin-bottom: 50px;
@@ -445,14 +358,11 @@ p {
 
 div .design_process img {
   width: 700px;
-  /* height: 280px; */
   margin: 30px auto;
   display: block;
-
 }
 
 .video {
-
   display: block;
   margin: 0 auto;
 }
@@ -461,11 +371,12 @@ div .design_process img {
   display: flex;
   flex-wrap: wrap;
   overflow-x: scroll;
-  /* position:fixed;  */
 }
+/*
 
-/* CSS for data viz content */
+CSS for data viz content
 
+*/
 .data_process{
   display: inline-block;
 
@@ -475,8 +386,6 @@ div .data_process img{
   height: 450px;
   margin: 10px;
 }
-
-
 /* --------------CSS for About-----------  */
 #section3{
   margin: 80px auto;
@@ -486,12 +395,7 @@ div .data_process img{
 
 #section3 .main_container
 {
-  /* margin: 50 auto; */
   padding:10px;
-  /* margin-left: 20px;
-  margin-bottom: 80px; */
-  /* display:flex;
-  flex-wrap: wrap; */
   display: inline-block;
   width: 90%;
   line-height: 1.5em;
@@ -501,7 +405,6 @@ div .data_process img{
   font-family: 'clear_sans_lightregular', sans-serif;
   color: #242424;
   font-size: 1.1em;
-  /* text-transform: uppercase; */
   margin: 0 0 10px 0;
 }
 
@@ -526,33 +429,12 @@ div .data_process img{
   font-size: 14px;
 }
 
-/* #thirdSection .main_container img{
-  -webkit-transform: rotate(90deg);
-  display: inline-block;
-} */
 
-
-
-
-
-
-  /* responsive */
-
-/* @media screen and ( min-width:700px ){
-
-  .contentLeft{
-    width: 50%;
-  }
-  .contentRight{
-    width: 30%;
-  }
-} */
 
 
 #footer{
   background-color: #D3E1BE;
   margin : 0;
-  /* z-index: 99; */
   position: relative;
   bottom:0;
   width: 100%;
@@ -560,45 +442,27 @@ div .data_process img{
 }
 
 .copyright {
-  /* font-family: 'clear_sans_lightregular', sans-serif; */
   color: #242424;
   font-size: 0.9em;
   font-family: 'Coda';
   padding: 0;
   line-height: 40px;
   text-align : center;
-  /* height: 40px; */
-  width: 30%;
+  width: 45%;
   margin:5px;
   display: inline-block;
 }
 .email{
-  /* font-family: 'clear_sans_lightregular', sans-serif; */
   color: #242424;
   font-size: 0.9em;
   font-family: 'Coda';
   line-height: 40px;
-  /* height: 40px; */
   text-align: center;
-  width: 33%;
+  width: 45%;
   margin:5px;
   display: inline-block;
 }
-/* .social{
-  display:inline-block;
-  /* width: 30%;
-  height: 40px; */
-/* } */
-/* .social li{ */
-  /* float: left; */
-  /* width:100px; */
-  /* font-family: 'clear_sans_lightregular', sans-serif; */
-  /* font-size: 0.8em; */
-  /* display: inline-block;
-  text-align: right; */
-/* } */
-
-.social ul{
+/* .social ul{
    list-style: none;
    padding: 0;
    text-align: center;
@@ -618,9 +482,8 @@ div .data_process img{
   margin:5px;
   width: 30%;
   padding:0;
-  /* line-height: 60px;  */
 
-}
+} */
 .head_container{
   clear: both;
   padding: 10px 0 10px 0;
@@ -629,4 +492,83 @@ div .data_process img{
 .foot_container{
   clear: both;
   padding: 10px 0 10px 0;
+}
+
+
+/*
+
+
+1. 로딩이미지 위치
+3. hover 효과 없애기
+4. modal 스크롤이 안되는데?
+5. about me 사이즈
+6. footer 사이즈
+
+
+*/
+
+@media screen and (max-width: 690px) {
+  /* 여기붙어라 제목 줄이기 */
+  /* 프로젝트 이미지 줄이기  */
+  /* 내가꿈꾸는밤 동영상 줄이기*/
+  .subject{
+    font-size:15px;
+    width: calc(100% - 20px);
+    padding:20px 0 20px 20px;
+    margin:50px 0 30px 0;
+    left: 5%;
+    top:30px;
+  }
+  .img-wrapper, .img-wrapper img, .darkness {
+    width: 200px;
+    height:200px;
+  }
+  .line{
+    width: 150px;
+    height: 150px;
+  }
+  .title{
+    width: 150px;
+    top: 30px;
+    font-size:15px;
+  }
+  .title p{
+    font-size: 15px;
+  }
+  #modal_title1, #modal_title2, #modal_title3, #modal_title4
+  {
+    /* top:30px; */
+    font-size:15px;
+  }
+  video{
+    width: 400px;
+
+  }
+
+}
+@media screen and (max-width: 730px) {
+
+}
+@media screen and (max-width: 850px) {
+  /* 데이터시각화 이미지 크기줄이기 */
+  /* close X 크기 줄이기 */
+  .close {
+    font-size: 20px;
+  }
+  div .data_process img{
+    width: 480px;
+    height: 360px;
+  }
+
+
+}
+@media screen and (max-width: 990px) {
+  /* 여기붙어라 사진 짤림 */
+  div .design_process img{
+    width: 500px;
+  }
+  video{
+    width: 480px;
+    height: 360px; 
+  }
 }
