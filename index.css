@@ -507,7 +507,7 @@ div .data_process img{
 
 */
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 480px) {
 .modal-content{
   max-width:100%;
 
@@ -542,6 +542,7 @@ div .data_process img{
   padding:30px;
 }
 }
+
 @media screen and (max-width: 750px) {
   .subject{
     font-size:15px;
