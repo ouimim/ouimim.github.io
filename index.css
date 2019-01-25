@@ -72,29 +72,23 @@ section {
   overflow: hidden; /* 차이 모르겠는데?*/
 }
 #section1{
-  /* position:relative; */
   width: 100%
   height: 320px;
   background-color:#ffffff ;
-   /* #CDF2E6;#D3E1BE */
-  overflow: hidden /*흠..*/
+  overflow: hidden
   padding: 0;
-  /* margin : 0 auto; */
   margin-bottom: 70px;
 }
-
 
 #name {
   padding: 90px 0px;
   text-align:center;
-  /* display: inline-block; */
 }
 
 #name img{
-  animation: fadein 3s;
-  -webkit-animation: fadein 3s;
-  -moz-animation: fadein 3s;
-  /* text-align:center;  */
+  animation: fadein 5s;
+  -webkit-animation: fadein 5s;
+  -moz-animation: fadein 5s;
 }
 @keyframes fadein{
   from{
@@ -179,7 +173,8 @@ button:focus{
   margin:5% auto;
   padding: 20px;
   border:1px solid #727272;
-  width:90%;
+  max-width:75%;
+  /* max-height: calc(100% - 20px); */
   z-index:99;
 
 }
@@ -305,7 +300,7 @@ button:focus{
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   clear: both;
 }
 
@@ -329,7 +324,7 @@ p span{
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 120px;
+  margin-bottom: 0px;
   text-align:center;
 }
 
@@ -348,7 +343,7 @@ p span{
 
 p {
   font-family: 'clear_sans_lightregular', sans-serif;
-  color: #727272;
+  color: black;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -357,12 +352,13 @@ p {
 
 
 div .design_process img {
-  width: 700px;
+  width: 90%;
   margin: 30px auto;
   display: block;
 }
 
 .video {
+  width: 500px;
   display: block;
   margin: 0 auto;
 }
@@ -372,6 +368,14 @@ div .design_process img {
   flex-wrap: wrap;
   overflow-x: scroll;
 }
+
+.video_wrap{
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 /*
 
 CSS for data viz content
@@ -397,14 +401,14 @@ div .data_process img{
 {
   padding:10px;
   display: inline-block;
-  width: 90%;
+  width: 70%;
   line-height: 1.5em;
 }
 
 .myName{
   font-family: 'clear_sans_lightregular', sans-serif;
   color: #242424;
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 0 0 10px 0;
 }
 
@@ -423,7 +427,7 @@ div .data_process img{
 
 .me_describ  li  span{
   display: inline-block;
-  width: 130px;
+  /* width: 130px; */
   letter-spacing: 2px;
   color: #242424;
   font-size: 14px;
@@ -497,20 +501,30 @@ div .data_process img{
 
 /*
 
-
 1. 로딩이미지 위치
 3. hover 효과 없애기
-4. modal 스크롤이 안되는데?
+4. modal 스크롤이 안되는데?-> modal 사이즈 줄이기
 5. about me 사이즈
-6. footer 사이즈
-
 
 */
 
-@media screen and (max-width: 690px) {
-  /* 여기붙어라 제목 줄이기 */
-  /* 프로젝트 이미지 줄이기  */
-  /* 내가꿈꾸는밤 동영상 줄이기*/
+@media screen and (max-width: 639px) {
+
+  #modal_title1, #modal_title2, #modal_title3, #modal_title4
+  {
+    font-size:15px;
+  }
+  /* video{
+    width: 480px;
+
+  } */
+  #footer .column{
+    width:100%;
+    font-size: 12px;
+    text-align:center;
+  }
+}
+@media screen and (max-width: 750px) {
   .subject{
     font-size:15px;
     width: calc(100% - 20px);
@@ -535,40 +549,33 @@ div .data_process img{
   .title p{
     font-size: 15px;
   }
-  #modal_title1, #modal_title2, #modal_title3, #modal_title4
-  {
-    /* top:30px; */
-    font-size:15px;
-  }
-  video{
-    width: 400px;
-
-  }
-
+.myName, .me_describ p{
+  font-size: 13px;
 }
-@media screen and (max-width: 730px) {
-
+.close {
+  font-size: 20px;
 }
+div .data_process img{
+  width: 480px;
+  height: 360px;
+}
+}
+
 @media screen and (max-width: 850px) {
-  /* 데이터시각화 이미지 크기줄이기 */
-  /* close X 크기 줄이기 */
-  .close {
-    font-size: 20px;
-  }
-  div .data_process img{
-    width: 480px;
-    height: 360px;
-  }
+
 
 
 }
 @media screen and (max-width: 990px) {
-  /* 여기붙어라 사진 짤림 */
   div .design_process img{
     width: 500px;
   }
   video{
     width: 480px;
-    height: 360px; 
+    height: 360px;
   }
+}
+
+@media (hover:none){
+
 }
