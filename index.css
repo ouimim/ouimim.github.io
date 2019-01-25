@@ -174,7 +174,6 @@ button:focus{
   padding: 20px;
   border:1px solid #727272;
   max-width:75%;
-  /* max-height: calc(100% - 20px); */
   z-index:99;
 
 }
@@ -409,7 +408,7 @@ div .data_process img{
   font-family: 'clear_sans_lightregular', sans-serif;
   color: #242424;
   font-size: 1em;
-  margin: 0 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .me_wrap{
@@ -509,20 +508,39 @@ div .data_process img{
 */
 
 @media screen and (max-width: 639px) {
+.modal-content{
+  max-width:100%;
 
-  #modal_title1, #modal_title2, #modal_title3, #modal_title4
+}
+.pro_container{
+  width:100%;
+}
+.content_total{
+  width:100%;
+}
+#section2{
+  width:100%;
+}
+#modal_title1, #modal_title2, #modal_title3, #modal_title4
   {
     font-size:15px;
   }
   /* video{
-    width: 480px;
+    width: 70%;
 
   } */
-  #footer .column{
+#footer .column{
     width:100%;
     font-size: 12px;
     text-align:center;
   }
+/* #section3 .main_container{
+  width:90%;
+} */
+.me_wrap{
+  /* width:90%; */
+  padding:30px;
+}
 }
 @media screen and (max-width: 750px) {
   .subject{
